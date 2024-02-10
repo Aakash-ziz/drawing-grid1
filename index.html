@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-drawing</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .container{
+            width: 748px;
+            height: 748px;
+            display: grid;
+            grid-template-columns: 50px 331px  190px 150px ;
+            grid-template-rows: 300px 160px 210px 50px ;
+            background-color: black;
+            gap:9px;
+        }  
+
+        .cor1{
+             background-color: orange;
+             grid-row-start: 1;
+             grid-row-end:2;
+             grid-column-start:1 ;
+             grid-column-end:3;
+        }
+
+        .cor2{
+            background-color: white;
+             grid-column-start:3 ;
+             grid-column-end:5;
+             grid-row-start: -5;
+             grid-row-end:-4;
+        }
+
+        .cor3{
+            background-color: white;
+            grid-column-start:1 ;
+             grid-column-end:3;
+             grid-row-start: 2;
+             grid-row-end:3;
+        }
+        .cor4{
+            background-color: white;
+            grid-column-start:3 ;
+             grid-column-end:5;
+             grid-row-start: -4;
+             grid-row-end:-3;
+        }
+
+        .cor5{
+            background-color: bisque;
+            grid-column-start:1 ;
+             grid-column-end:2;
+             grid-row-start: 3;
+             grid-row-end:5;
+        }
+
+        .cor6{
+            background-color: white;
+            grid-column-start:2 ;
+             grid-column-end:3;
+             grid-row-start: 3;
+             grid-row-end:5;
+        }
+
+        .cor7{
+            background-color: rgb(11, 94, 172);
+            grid-column-start:3 ;
+             grid-column-end:4;
+             grid-row-start: 3;
+             grid-row-end:4;
+        }
+
+        .cor8{
+            background-color: white;
+            grid-column-start:4 ;
+             grid-column-end:5;
+             grid-row-start: -3;
+             grid-row-end:-1;
+        }
+
+        .cor9{
+            background-color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cor1"></div>
+        <div class="cor2"></div>
+        <div class="cor3"></div>
+        <div class="cor4"></div>
+        <div class="cor5"></div>
+        <div class="cor6"></div>
+        <div class="cor7"></div>
+        <div class="cor8"></div>
+        <div class="cor9"></div>
+    </div>
+</body>
+</html>
